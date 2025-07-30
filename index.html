@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Official website of Himachal Pradesh Technical University (HPTU)" />
+  <meta name="keywords" content="HPTU, Himachal Pradesh Technical University, Education, University Website" />
+  <meta name="author" content="HPTU" />
+  <title>HPTU Website</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="top-bar">
+      <div class="container">
+        <div class="utility-bar d-flex flex-wrap align-items-center justify-content-between">
+          <div class="contact-info" aria-label="Helpline Number">
+            <span aria-hidden="true">📞</span>
+            <a href="tel:18009689999">1-800-968-9999</a>
+          </div>
+          <div class="accessibility-options" aria-label="Accessibility options">
+            <button aria-label="Decrease font size" class="font-resize" data-action="decrease">A-</button>
+            <button aria-label="Default font size" class="font-resize" data-action="default">A</button>
+            <button aria-label="Increase font size" class="font-resize" data-action="increase">A+</button>
+            <button aria-label="Toggle high contrast" class="contrast-toggle">🌓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="departLogo">
+      <div class="container">
+        <div class="departLogo-wrap">
+          <img src="images/logo.png" alt="HPTU Logo" height="66">
+          <div class="search-area" role="search">
+            <form action="/search" method="get" aria-label="Site search">
+              <label for="search" class="sr-only">Search the site</label>
+              <input type="text" id="search" name="q" placeholder="Search..." />
+              <button type="submit" aria-label="Search"><span aria-hidden="true">🔍</span></button>
+            </form>
+            <a href="/results" class="results-button" role="button">View Results</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-navigation">
+      <div class="container">
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/alumni" aria-haspopup="true" aria-expanded="false">Alumni</a></li>
+            <li><a href="/uss">USS</a></li>
+            <li><a href="/administration">Administration</a></li>
+            <li><a href="/academics">Academics</a></li>
+            <li><a href="/examinations">Examinations</a></li>
+            <li><a href="/student-corner">Student Corner</a></li>
+            <li><a href="/tender">Tender</a></li>
+            <li><a href="/info">Information Corner</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content area can go here -->
+
+  <!-- Footer -->
+  <footer class="footer-main text-white pt-5">
+    <div class="container">
+      <div class="row text-start">
+
+        <!-- Logo & About -->
+        <div class="col-md-4 mb-4">
+          <img src="images/whitelogo.png" alt="Logo" class="mb-3">
+          <p>Himachal Pradesh Technical University nurtures its students in the Ultra-modern
+            education and scientific knowledge along with divine and spiritual vicinity. In Himachal …</p>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-md-4 mb-4">
+          <h5>Useful Links</h5>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Administration</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Academics</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Examinations</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Student Corner</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white text-decoration-none">Alumni</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Tenders</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Information Corner</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Picture Gallery</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-4">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-home me-2"></i> dummy address</li>
+            <li><i class="fa fa-phone me-2"></i> +91 xxx-xxx-xxxx</li>
+            <li><i class="fa fa-envelope me-2"></i> <a href="mailto:support@hptu.ac.in" class="text-white text-decoration-none">support@hptu.ac.in</a></li>
+          </ul>
+          <h6 class="mt-4">Follow us</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-white" aria-label="Google"><i class="fab fa-google fa-lg"></i></a>
+            <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Strip -->
+    <div class="footer-bottom py-3">
+      <div class="container">
+        <small>© 2025 All Rights Reserved</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
