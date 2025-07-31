@@ -23,14 +23,26 @@
   />
   <!-- jQuery (required by Slick) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Slick JS -->
+  <!-- Slick Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Optional Theme -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- Your custom JS to initialize the slider -->
-  <script src="js/slider.js"></script>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css" />
-  <script src="js/script.js"></script>
   <script src="js/include.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.hero-slider .hero-slider-wrapper').slick({
+        autoplay: true,
+        dots: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+    });
+  </script>
 </head>
 <body>
   <!-- Header -->
@@ -87,7 +99,9 @@
     </div>
   </header>
   <main id="content">
-<!--    <div id="header" include-html="hero_slider.html"></div>-->
+    <div id="hero-slider" include-html="hero_slider.html"></div>
+    <!-- vcmessage block -->
+    <div id="vcmessage-block" include-html="vc_message.html"></div>
     <!-- leader block -->
     <div id="leader-block" include-html="leader-section.html"></div>
     <!-- news block -->
@@ -98,7 +112,13 @@
     <div id="stat-section" include-html="stat_section.html"></div>
     <!-- program section -->
     <div id="program-section" include-html="program_block.html"></div>
-    <!-- program section -->
+    <!-- partners section -->
+    <div id="partner-section" include-html="partners.html"></div>
+    <!-- event notice section -->
+    <div id="event-notices" include-html="events_notice.html"></div>
+    <!-- photo section -->
+    <div id="photo-gallery" include-html="photo_gallery.html"></div>
+    <!-- uss section -->
     <div id="uss-section" include-html="uss_section.html"></div>
   </main>
   <!-- Footer -->

@@ -1,0 +1,36 @@
+<section class="partners-section">
+    <div class="container">
+        <h2 class="section-title">Academic & Industry Partners</h2>
+        <div class="partners-scroll-wrapper">
+            <div class="partners-logos">
+                <div class="partner-logo"><img src="images/1.png" alt="Ministry of Education"></div>
+                <div class="partner-logo"><img src="images/2.png" alt="Himachal Pradesh"></div>
+                <div class="partner-logo"><img src="images/3.png" alt="Ministry of IT"></div>
+                <div class="partner-logo"><img src="images/4.png" alt="Council"></div>
+                <div class="partner-logo"><img src="images/1.png" alt="Ministry of Education"></div>
+                <div class="partner-logo"><img src="images/2.png" alt="Himachal Pradesh"></div>
+                <div class="partner-logo"><img src="images/3.png" alt="Ministry of IT"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+        $('.partners-logos').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        dots: true
+                    }
+                }
+            ]
+        });
+    });
+</script>
