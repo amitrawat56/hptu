@@ -1,0 +1,28 @@
+.partners-section {
+  padding-bottom: 103px;
+
+  .section-title {
+    color: #F57B15;
+    font-family: Oswald;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+  }
+  .partners-scroll-wrapper {
+    padding-top: 39px;
+    .partners-logos {
+      .partner-logo {
+        padding-right: 43px;
+        img {
+          height: 77px;
+          object-fit: contain;
+          max-width: 100%;
+          width: auto;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

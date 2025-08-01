@@ -1,0 +1,176 @@
+.notice-board {
+  padding: 86px 0;
+  .notice-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 14px;
+
+    .title {
+      color: #F57B15;
+      font-family: Oswald;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 2px;
+    }
+    a.more-news {
+      color: #FFF;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+  .notice-content {
+    .nav-tabs {
+      display: block;
+      border: none;
+      .nav-item {
+        button {
+          color: #fff;
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          padding: 13.5px 24px;
+          border-radius: unset;
+          background: #393C97;
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid #ffff;
+          margin-bottom: 1px;
+          &.active {
+            color: #000;
+            background: #fff;
+          }
+        }
+      }
+    }
+    .tab-content {
+      .tab-pane {
+        .events-list {
+          padding: 0 10px;
+          background: #fff;
+          .event-item {
+            display: flex;
+            gap: 15px;
+            padding: 30px 0;
+
+            .date-box {
+              background: #393C97;
+              padding: 5px 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              span.day {
+                color: #FFF;
+                font-family: "Open Sans", sans-serif;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border-bottom: 1px solid;
+              }
+              span.date {
+                color: #FFF;
+                text-align: center;
+                font-family: "Open Sans", sans-serif;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+          }
+          .event-item {
+            .event-details {
+              .title {
+                color: #000;
+                font-family: "Open Sans", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+              }
+              .time {
+                color: #000;
+                font-family: "Open Sans", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+    .highlighted-news {
+      .news-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .news-item {
+          flex: 0 0 49%;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+          }
+          &:first-child {
+            flex: 0 0 100%;
+            .content {
+              .content-wrap {
+                .title {
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+          .content {
+            position: absolute;
+            bottom: 0;
+            .content-wrap {
+              padding: 18px 20px;
+              .title {
+                color: #FFF;
+                font-family: "Open Sans", sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                padding-bottom: 10px;
+              }
+              .date {
+                color: #FFF;
+                font-family: "Open Sans", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

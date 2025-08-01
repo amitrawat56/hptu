@@ -1,0 +1,50 @@
+.explore-programs {
+  .overlay {
+    padding: 100px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+    }
+    .explore-program-wrap {
+      z-index: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        font-family: Oswald;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 100%;
+        color: #F1F1F1;
+      }
+      .search-box {
+        input[type="text"] {
+          font-family: Roboto;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 100%;
+          text-transform: capitalize;
+          padding: 16px 26px;
+          min-width: 475px;
+        }
+        button {
+          font-family: Roboto;
+          font-weight: 900;
+          font-size: 20px;
+          line-height: 100%;
+          text-transform: uppercase;
+          padding: 18px 35px;
+          background: #F57B15;
+          border: unset;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.program-section {
+  padding: 69px 0;
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 27px;
+
+    h2 {
+      font-family: Oswald;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 44px;
+      color: #F57B15;
+    }
+    a {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #003057;
+
+      &:after {
+        content: "\f061";
+        font-family: "Font Awesome 6 Free";
+        margin-left: 4px;
+        font-weight: bold;
+      }
+    }
+  }
+  .program-card {
+    box-shadow: 0 0 10px 0 #00000040;
+    padding: 32px 30px;
+    height: 100%;
+    border-radius: 10px;
+
+    &:hover {
+      background: #393C97;
+      .program-title {
+        color: #fff;
+      }
+    }
+    .program-icon {
+      background: #fbf6ea;
+      height: 48px;
+      width: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+    .program-title {
+      font-family: "Sen", sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 40px;
+      padding-top: 16px;
+    }
+  }
+}

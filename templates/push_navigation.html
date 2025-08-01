@@ -1,0 +1,43 @@
+<section class="layout-push-navigation" role="region" aria-label="Side Navigation Section">
+    <div class="push-nav-wrapper">
+        <section class="row region region-slide-in-navigation">
+            <div class="search-section">
+                <label for="search">SEARCH</label>
+                <input type="text" id="search" placeholder="Keyword" />
+            </div>
+            <nav class="nav-links">
+                <ul class="top-links">
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">APPLY</a></li>
+                </ul>
+            </nav>
+            <nav role="navigation" aria-labelledby="main-navigation-menu" class="main-navigation">
+                <ul class="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">USS</a></li>
+                    <li><a href="#">Administration</a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        const $menuToggle = $('.departLogo-wrap').find('button.push-menu-toggle');
+        const $pushNav = $('.layout-push-navigation');
+        $menuToggle.on('click', function (e) {
+            e.stopPropagation();
+            $menuToggle.toggleClass('active');
+            $pushNav.toggleClass('active');
+        });
+        $(document).on('click', function (e) {
+            if ($pushNav.hasClass('active') && !$(e.target).closest('.layout-push-navigation, .push-menu-toggle').length) {
+                $pushNav.removeClass('active');
+                $menuToggle.removeClass('active');
+            }
+        });
+    });
+</script>

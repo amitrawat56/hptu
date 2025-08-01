@@ -1,0 +1,35 @@
+.leaders-section {
+  padding: 50px 0 73px 0;
+
+  .leaders-content {
+    background: #F4F4F4;
+    text-align: center;
+    padding: 40px;
+    height: 100%;
+    &:hover {
+      background: #DAE1E9;
+    }
+    .leader-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .leader-name {
+      font-weight: 600;
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+    .leader-title {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.4;
+    }
+    .state {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.4;
+    }
+  }
+}

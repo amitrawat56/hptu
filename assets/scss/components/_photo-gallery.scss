@@ -1,0 +1,49 @@
+.photo-gallery {
+  padding: 100px 64px;
+  .photo-gallery__wrapper {
+    .title {
+      color: #F57B15;
+      font-family: Oswald;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 40px;
+      padding-bottom: 12px;
+    }
+    .photo-gallery-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 18px;
+
+      .body {
+        color: #000;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 31px;
+        max-width: 587px;
+      }
+      a {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #003057;
+
+        &::after {
+          content: "\f061";
+          font-family: "Font Awesome 6 Free";
+          margin-left: 4px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .photo-gallery-item {
+    margin-bottom: 22px;
+  }
+}

@@ -1,0 +1,59 @@
+.vc-message-section {
+  position: relative;
+  margin-top: -84px;
+  @include media-breakpoint-down(lg) {
+    .vc-message-section {
+      margin-top: 0;
+    }
+  }
+  .vc-text {
+    background: #FFFFFF;
+    padding: 36px 20px;
+
+    .title {
+      color: #F57B15;
+      font-family: Oswald;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 125%;
+    }
+
+    .body {
+      color: rgba(0, 0, 0, 0.56);
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 31px;
+      padding: 33px 0;
+    }
+    .vc-read-more {
+      color: #F57B15;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: normal;
+      text-decoration: none;
+      &:after {
+        content: "\f061";
+        font-family: "Font Awesome 6 Free";
+        margin-left: 4px;
+      }
+    }
+  }
+  .vc-image {
+    position: relative;
+    margin-top: -150px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 0;
+      text-align: center;
+    }
+    img {
+      width: 464px;
+      height: 661px;
+      aspect-ratio: 73/104;
+      object-fit: cover;
+    }
+  }
+}

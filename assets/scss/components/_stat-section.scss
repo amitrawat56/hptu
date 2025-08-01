@@ -1,0 +1,28 @@
+.stats-section {
+  padding: 90px 0 53px 0;
+  .stat-box {
+    .icon-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 14px;
+      justify-content: center;
+      .stat-icon {
+        max-width: 60px;
+      }
+
+      .stat-number {
+        font-family: Oswald;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 100%;
+      }
+    }
+    .stat-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      text-transform: lowercase;
+    }
+  }
+}
