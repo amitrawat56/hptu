@@ -1,24 +1,2 @@
 # Node modules
 node_modules/
-
-# Gulp output folders
-css/
-js/
-
-# Sourcemaps
-*.map
-
-# OS-specific
-.DS_Store
-Thumbs.db
-
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Optional: VSCode settings
-.vscode/
-
-# Environment
-.env
